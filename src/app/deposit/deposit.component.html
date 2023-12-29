@@ -1,0 +1,11 @@
+<!-- deposit.component.html -->
+<div>
+    <h2>DEPOSIT</h2>
+    <div>
+      <app-select-banks></app-select-banks>
+      <input type="number" placeholder="Enter the Amount" [(ngModel)]="amount">
+      <button (click)="deposit()">deposit</button>
+    </div>
+    <h3>{{ returnValue }}</h3>
+  </div>
+  

@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'BankApp';
+  deposit: boolean = false
+  balance: boolean = false
+
+  depositClick(){
+    this.deposit = true
+    this.balance = false
+  }
+
+  balanceClick(){
+    this.deposit = false
+    this.balance = true
+  }
+
 }
